@@ -4,13 +4,13 @@
 
 void
 List::print() {
-    if (is_empty()) return;
+    /*if (is_empty()) return;
     Node* p = first;
     while (p) {
         std::cout << p->val << "->";
         p = p->next;
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
 }
 
 
