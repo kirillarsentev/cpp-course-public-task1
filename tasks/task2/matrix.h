@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 
-using std::size_t;
+//using std::size_t;
 
 // Основной класс матрицы
 class Matrix{
