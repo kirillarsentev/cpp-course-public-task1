@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-#include <stdexcept>
-=======
->>>>>>> master
 #include "matrix.h"
 #include <stdexcept>
 using RowMatrix = Matrix::RowMatrix;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 RowMatrix::RowMatrix(double* array, size_t size) {
 	this->_array = array;
 	this->_size = size;
@@ -109,18 +102,11 @@ Matrix& Matrix::operator*= (double k) {
 }
 
 Matrix Matrix::operator* (double k) {
-<<<<<<< HEAD
-	for (size_t i = 0; i < this->_rows * this->_cols; i++) {
-		this->_array[i] *= k;
-	}
-	return *this;
-=======
 	Matrix* obj = new Matrix(this->_rows, this->_cols);
 	for (size_t i = 0; i < this->_rows * this->_cols; i++) {
 		obj->_array[i] = this->_array[i] * k;
 	}
 	return *obj;
->>>>>>> master
 }
 
 bool Matrix::operator== (Matrix& matrix) {
@@ -152,9 +138,5 @@ size_t Matrix::rows() const {
 Matrix::~Matrix() {
 	delete[] this->_array;
 	this->_rows = 0;
-<<<<<<< HEAD
-	this->_cols = 0;
-=======
 	this->_cols = 0;
 }
->>>>>>> master
